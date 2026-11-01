@@ -1,5 +1,6 @@
 {
     "version": "9.33",
+    "portable_revision": "1",
     "description": "The Font-View-OK, creates a quick visual overview of fonts.",
     "homepage": "http://www.softwareok.com/?seite=Freeware/FontViewOK",
     "license": {
@@ -16,7 +17,10 @@
             "hash": "538b4c9f484b0a64e8896b408460200528428c7c1040aa3d8bacbe44f44f398c",
         }
     },
-
+    "pre_install": [
+        "Copy-Item \"$bucketsdir\\pa\\templates\\$app\\App\\*\" \"$dir\\..\\\" -Recurse | Out-Null ",
+        ""
+    ],
     "checkver": {
         "url": "http://www.softwareok.com/?seite=Freeware/FontViewOK/History",
         "regex": "version ([\\d.]+)"
