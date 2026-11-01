@@ -1,6 +1,6 @@
 {
     "version": "9.33",
-    "portable_revision": "1",
+    "portable_revision": 1,
     "description": "The Font-View-OK, creates a quick visual overview of fonts.",
     "homepage": "http://www.softwareok.com/?seite=Freeware/FontViewOK",
     "license": {
